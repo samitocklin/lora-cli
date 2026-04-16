@@ -1,0 +1,13 @@
+# Build output
+lora-cli
+*.o
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
