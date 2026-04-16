@@ -1,5 +1,6 @@
 // radio.c — enum converters and shared LR11xx radio setup
 #include <stdio.h>
+#include <string.h>
 
 #include "radio.h"
 #include "board.h"

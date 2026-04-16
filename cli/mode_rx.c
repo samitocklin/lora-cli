@@ -121,7 +121,7 @@ int mode_rx(lora_ctx_t *ctx, const lora_rx_params_t *p)
         if (st != LR11XX_STATUS_OK || irq == 0) { sleep_ms(50); continue; }
 
         if (irq & LR11XX_SYSTEM_IRQ_RX_DONE) {
-            uint8_t                         payload[255];
+            uint8_t                         payload[256];
             lr11xx_radio_rx_buffer_status_t rxbuf;
             memset(&rxbuf, 0, sizeof(rxbuf));
 
